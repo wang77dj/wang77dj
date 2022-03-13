@@ -1,0 +1,18 @@
+server:
+  port: 7722
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml #就这样就好了，src下默认访问不到，需要配置pom
+  type-aliases-package: com.project.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  datasource:
+    url: jdbc:mysql://47.107.246.93:3306/zz?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 10086
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
