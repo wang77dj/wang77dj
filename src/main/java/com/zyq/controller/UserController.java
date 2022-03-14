@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <p>
  *  前端控制器
@@ -42,5 +44,11 @@ public class UserController {
                 .eq("username", name)
                 .eq("password", pwd));
         return one != null;
+    }
+
+    @ApiOperation("获取所有用户")
+    @GetMapping("/all")
+    public List<User> getAll(){
+        return service.list();
     }
 }
