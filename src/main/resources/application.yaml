@@ -4,8 +4,8 @@ server:
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml #就这样就好了，src下默认访问不到，需要配置pom
   type-aliases-package: com.project.pojo
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 spring:
   datasource:

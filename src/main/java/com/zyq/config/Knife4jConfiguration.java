@@ -11,7 +11,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
-//http://localhost:8081/doc.html
+//http://localhost:7722/doc.html
 @Configuration
 @EnableSwagger2WebMvc
 public class Knife4jConfiguration {
